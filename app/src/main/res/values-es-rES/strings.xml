@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="text2">Y también este es el texto 2</string>
+    <string name="text1">Este es el texto 1</string>
+    <string name="buttonText">Botón</string>
+</resources>

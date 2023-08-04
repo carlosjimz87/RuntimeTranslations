@@ -13,7 +13,7 @@ class MainActivity : BaseActivity(){
 
     private val binding by lazy { ActivityMainBinding.inflate(layoutInflater) }
 
-    lateinit var localeChangeReceiver: LocaleChangeReceiver
+    private lateinit var localeChangeReceiver: LocaleChangeReceiver
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,7 +21,6 @@ class MainActivity : BaseActivity(){
 
         supportActionBar?.title = getString(R.string.app_name_title)
         setListeners()
-        registerLocaleChangeReceiver()
     }
 
     private fun registerLocaleChangeReceiver() {
@@ -29,23 +28,6 @@ class MainActivity : BaseActivity(){
         val filter = IntentFilter(Intent.ACTION_LOCALE_CHANGED)
         registerReceiver(localeChangeReceiver, filter)
     }
-
-//    override fun onResume() {
-//        super.onResume()
-//        registerReceivers()
-//        localeManager.setLocale(localeManager.getLocale())
-//    }
-
-//    private fun registerReceivers() {
-//
-//        val filter = IntentFilter(Intent.ACTION_LOCALE_CHANGED)
-//        registerReceiver(localeChangeReceiver, filter)
-//    }
-
-//    override fun onPause() {
-//        super.onPause()
-//        unregisterReceiver(localeChangeReceiver)
-//    }
 
     private fun setListeners() {
 
@@ -69,6 +51,10 @@ class MainActivity : BaseActivity(){
         }
     }
 
+    override fun onResume() {
+        super.onResume()
+        registerLocaleChangeReceiver()
+    }
 
     override fun onPause() {
         super.onPause()

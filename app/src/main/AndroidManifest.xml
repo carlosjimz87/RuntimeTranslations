@@ -31,6 +31,12 @@
         <activity
             android:name=".views.TestActivity2"
             android:label="@string/activity2_title" />
+        <receiver android:name=".receivers.LocaleChangeReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.LOCALE_CHANGED" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

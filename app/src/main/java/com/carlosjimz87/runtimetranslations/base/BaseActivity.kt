@@ -6,6 +6,7 @@ import android.content.IntentFilter
 import android.content.res.Configuration
 import android.os.Bundle
 import android.os.PersistableBundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.carlosjimz87.runtimetranslations.managers.LocaleManager
 import com.carlosjimz87.runtimetranslations.receivers.LocaleChangeReceiver
@@ -24,6 +25,7 @@ open class BaseActivity : AppCompatActivity() {
         val newLocale = localeManager.getLocale()
         val context = localeManager.setLocale(newLocale)
         super.attachBaseContext(context)
+        Toast.makeText(this, "Locale changed", Toast.LENGTH_SHORT).show()
     }
 
 }

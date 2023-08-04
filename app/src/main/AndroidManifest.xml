@@ -24,14 +24,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <receiver
-            android:name=".receivers.LocaleChangeReceiver"
-            android:exported="true"
-            android:enabled="true">
-            <intent-filter>
-                <action android:name="android.intent.action.LOCALE_CHANGED" />
-            </intent-filter>
-        </receiver>
+
+        <activity
+            android:name=".views.TestActivity1"
+            android:label="@string/activity1_title" />
+        <activity
+            android:name=".views.TestActivity2"
+            android:label="@string/activity2_title" />
     </application>
 
 </manifest>

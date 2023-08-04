@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name_title">Laufzeitübersetzungen</string>
     <string name="text2">Und das ist auch der text 2</string>
     <string name="text1">Das ist der text 1</string>
+    <string name="arbitrary1">Beliebiger Text 1</string>
+    <string name="arbitrary2">Beliebiger Text 2</string>
+    <string name="activity1_title">Testansicht 1</string>
+    <string name="activity2_title">Testansicht 2</string>
     <string name="buttonText">Taste</string>
 </resources>

@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name" translatable="false">RuntimeTranslations</string>
+    <string name="app_name_title">Runtime Translations</string>
     <string name="text2">And also this is the text 2</string>
     <string name="text1">This is the text 1</string>
+    <string name="arbitrary1">Arbitrary text 1</string>
+    <string name="arbitrary2">Arbitrary text 2</string>
+    <string name="activity1_title">Testing view 1</string>
+    <string name="activity2_title">Testing view 2</string>
     <string name="buttonText">Button</string>
 </resources>
